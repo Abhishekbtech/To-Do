@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# To-Do Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a simple to-do application built with React and Redux. The application allows users to add, display, and manage tasks. Tasks can be searched by name, and their deadlines are highlighted if they have passed.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Add New Task**: Users can add a new task with a description and deadline.
+- **Task List**: Displays a list of tasks with descriptions and deadlines.
+- **Search Tasks**: Filter tasks by their names using the search component.
+- **Task State Management**: Tasks have a "pending" state and a distinct appearance if their deadlines have passed.
+- **State Management with Redux**: The application state is managed using Redux.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `src/components`
+  - `Header.js`: Contains a button to toggle the visibility of the `TaskInput` component.
+  - `TaskInput.js`: Contains an input field, date and time picker, and a "Save Task" button.
+  - `TaskList.js`: Displays the list of tasks, each with a description, deadline, and a "Delete" button.
+  - `Search.js`: Contains an input field to filter tasks by their descriptions.
+- `src/redux`
+  - `actions.js`: Contains Redux action types and action creators.
+  - `reducers.js`: Contains the Redux reducer to handle state changes.
+  - `store.js`: Configures the Redux store.
+- `src/App.js`: The main entry point of the application.
+- `src/index.js`: The entry point file where the Redux store is provided to the React app.
 
-### `npm test`
+## Installation and Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+    ``sd
+        git clone https://github.com/your-username/todo-app.git
+        cd todo-app
+    ``
+2. Install dependencies:
+    ``sh
+        npm install
+    ``
+3. Start the development server
+    ``sh
+        npm start
+    ``
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. The application will be available at `http://localhost:3000`
