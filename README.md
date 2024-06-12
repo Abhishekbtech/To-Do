@@ -35,17 +35,17 @@ This is a simple to-do application built with React and Redux. The application a
 ### Steps
 
 1. Clone the repository:
-    ``sd
+    ```sh
         git clone https://github.com/your-username/todo-app.git
         cd todo-app
-    ``
+    ```
 2. Install dependencies:
-    ``sh
+    ```sh
         npm install
-    ``
+    ```
 3. Start the development server
-    ``sh
+    ```sh
         npm start
-    ``
+    ```
 
 4. The application will be available at `http://localhost:3000`
