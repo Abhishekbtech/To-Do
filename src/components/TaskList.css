@@ -6,25 +6,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: none;
+    padding: 0px;
     margin-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: lightgreen;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #080137;
+    font-size: 25px;
 }
 
 .task-card button {
-    background-color: red;
+    background:linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+    box-shadow: 0 4.42184px 107.23px rgba(255, 86, 246, .51);
     /* width: 25%;  */
     padding: 10px;
     font-size: 18px;
-    border: 1px solid black;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 
 .task-card.past-deadline {
-    background-color: #f8d7da;
+    background-color: #080137;
     border-color: #f5c6cb;
+    color: white;
 }

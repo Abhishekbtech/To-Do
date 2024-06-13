@@ -1,6 +1,4 @@
 .task-input {
-    /* display: flex;
-    flex-direction: column; */
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -10,19 +8,25 @@
 }
 
 .task-input input {
+    background-color: rgba(0, 0, 0, 0.443);
+    color: white;
     width: 50%; 
-    padding: 10px;
+    padding: 15px;
     font-size: 18px;
-    border: 1px solid lightgray;
+    border: none;
     border-radius: 5px;
+    outline: none;
 }
 
 .task-input button {
-    background-color: green;
     width: 30%; 
     padding: 10px;
     font-size: 18px;
-    border: 1px solid black;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
+    background:linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+    box-shadow: 0 4.42184px 107.23px rgba(255, 86, 246, .51);
+    margin-bottom: 20px;
 }

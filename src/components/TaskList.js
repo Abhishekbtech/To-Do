@@ -24,9 +24,9 @@ const TaskList = () => {
                 const isPastDeadline = new Date(task.deadline) < currentDateTime;
                 return (
                     <div key={task.id} className={`task-card ${isPastDeadline ? 'past-deadline' : ''}`}>
-                        <p>{task.description}</p>
+                        <p style={{paddingLeft:'10px'}}>{task.description}</p>
                         <p>{new Date(task.deadline).toLocaleString()}</p>
-                        <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+                        <button className='btn' onClick={() => handleDeleteTask(task.id)}>Delete</button>
                     </div>
                 );
             })}

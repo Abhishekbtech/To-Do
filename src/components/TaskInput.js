@@ -34,7 +34,7 @@ const TaskInput = ({ toggleTaskInput }) => {
                 value={deadline}
                 onChange={(e) => setDeadline(e.target.value)}
             />
-            <button onClick={handleSaveTask}>Save Task</button>
+            <button className='btn' onClick={handleSaveTask}>Save Task</button>
         </div>
     );
 };
