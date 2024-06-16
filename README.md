@@ -49,3 +49,7 @@ This is a simple to-do application built with React and Redux. The application a
     ```
 
 4. The application will be available at `http://localhost:3000`
+
+## Deploy on Vercel
+
+Deployment link of my project `https://to-do-lovat-tau.vercel.app/`
