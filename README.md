@@ -52,4 +52,4 @@ This is a simple to-do application built with React and Redux. The application a
 
 ## Deploy on Vercel
 
-Deployment link of my project `https://to-do-lovat-tau.vercel.app/`
+Deployment link of my project `https://to-do-for-quadb-tech.vercel.app/`
